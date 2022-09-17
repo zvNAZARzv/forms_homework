@@ -24,122 +24,141 @@
   <form action="https://tests.fomenko.top/echo/index.php" method="post">
 
     <fieldset>
-      <label for="wechicle-type">Тип транспорта</label>
-      <select name="wechicle-type" id="wechicle-type">
-        <option value="Все типы транспорта">Все типы транспорта</option>
-        <option value="Легковые">Легковые</option>
-        <option value="Мото">Мото</option>
-        <option value="Грузовики">Грузовики</option>
-        <option value="Водный транспорт">Водный транспорт</option>
-        <option value="Прицепы">Прицепы</option>
-        <option value="Спец. техника">Спец. техника</option>
-      </select>
+      <div>
+        <label for="wechicle-type">Тип транспорта</label>
+        <select name="wechicle-type" id="wechicle-type">
+          <option value="Все типы транспорта">Все типы транспорта</option>
+          <option value="Легковые">Легковые</option>
+          <option value="Мото">Мото</option>
+          <option value="Грузовики">Грузовики</option>
+          <option value="Водный транспорт">Водный транспорт</option>
+          <option value="Прицепы">Прицепы</option>
+          <option value="Спец. техника">Спец. техника</option>
+        </select>
+      </div>
     </fieldset>
 
     <fieldset>
-      <label for="body-type">Тип кузова</label>
-      <select name="body-type" id="body-type">
-        <option value="Все типы кузова">Все типы кузова</option>
-        <option value="Универсал">Универсал</option>
-        <option value="Седан">Седан</option>
-        <option value="Купе">Купе</option>
-        <option value="Хэтчбек">Хэтчбек</option>
-        <option value="Кабриолет">Кабриолет</option>
-      </select>
+      <div>
+        <label for="body-type">Тип кузова</label>
+        <select name="body-type" id="body-type">
+          <option value="Все типы кузова">Все типы кузова</option>
+          <option value="Универсал">Универсал</option>
+          <option value="Седан">Седан</option>
+          <option value="Купе">Купе</option>
+          <option value="Хэтчбек">Хэтчбек</option>
+          <option value="Кабриолет">Кабриолет</option>
+        </select>
+      </div>
     </fieldset>
 
     <fieldset>
-      <label for="car-brand">Марка авто</label>
-      <select name="car-brand" id="car-brand">
-        <option value="Все марки">Все марки</option>
-        <option value="Honda">Honda</option>
-        <option value="BMW">BMW</option>
-        <option value="Mersedes">Mersedes</option>
-        <option value="Mazda">Mazda</option>
-        <option value="Nissan">Nissan</option>
-      </select>
+      <div>
+        <label for="car-brand">Марка авто</label>
+        <select name="car-brand" id="car-brand">
+          <option value="Все марки">Все марки</option>
+          <option value="Honda">Honda</option>
+          <option value="BMW">BMW</option>
+          <option value="Mersedes">Mersedes</option>
+          <option value="Mazda">Mazda</option>
+          <option value="Nissan">Nissan</option>
+        </select>
+      </div>
     </fieldset>
 
     <fieldset>
-      <label for="producing-country">Страна производитель</label>
-      <select name="producing-country" id="producing-country">
-        <option value="Все страны">Все страны</option>
-        <option value="Япония">Япония</option>
-        <option value="Франция">Франция</option>
-        <option value="США">США</option>
-        <option value="Англия">Англия</option>
-        <option value="Германия">Германия</option>
-      </select>
+      <div>
+        <label for="producing-country">Страна производитель</label>
+        <select name="producing-country" id="producing-country">
+          <option value="Все страны">Все страны</option>
+          <option value="Япония">Япония</option>
+          <option value="Франция">Франция</option>
+          <option value="США">США</option>
+          <option value="Англия">Англия</option>
+          <option value="Германия">Германия</option>
+        </select>
+      </div>
     </fieldset>
 
     <fieldset>
-      <label for="price-min">Стоимость от</label>
-      <input type="number" name="price-min" id="price-min" placeholder="Мин. сумма">
-      <label for="price-max">Стоимость до</label>
-      <input type="number" name="price-max" id="price-max" placeholder="Макс. сумма">
-      <label for="Currency">Валюта</label>
-      <select name="Currency" id="Currency">
-        <option value="$">$</option>
-        <option value="€">€</option>
-        <option value="ГРН">ГРН</option>
-      </select>
+      <legend>Стоимость</legend>
+      <div>
+        <label for="price-min">Минимальная стоимость</label>
+        <input type="number" name="price-min" id="price-min" placeholder="Мин. сумма">
+      </div>
+      <div>
+        <label for="price-max">Максимальная стоимость</label>
+        <input type="number" name="price-max" id="price-max" placeholder="Макс. сумма">
+      </div>
+      <div>
+        <label for="Currency">Валюта</label>
+        <select name="Currency" id="Currency">
+          <option value="$">$</option>
+          <option value="€">€</option>
+          <option value="ГРН">ГРН</option>
+        </select>
+      </div>
     </fieldset>
 
     <fieldset>
-      <label for="prod-year-from">Год выпуска от</label>
-      <select name="prod-year-from" id="prod-year-from">
-        <option value="Все года выпуска">Все года выпуска</option>
-        <option value="2022">2022</option>
-        <option value="2021">2021</option>
-        <option value="2020">2020</option>
-        <option value="2019">2019</option>
-        <option value="2018">2018</option>
-        <option value="2017">2017</option>
-        <option value="2016">2016</option>
-        <option value="2015">2015</option>
-        <option value="2014">2014</option>
-        <option value="2013">2013</option>
-        <option value="2012">2012</option>
-        <option value="2011">2011</option>
-        <option value="2010">2010</option>
-        <option value="2009">2009</option>
-        <option value="2008">2008</option>
-        <option value="2007">2007</option>
-        <option value="2006">2006</option>
-        <option value="2005">2005</option>
-        <option value="2004">2004</option>
-        <option value="2003">2003</option>
-        <option value="2002">2002</option>
-        <option value="2001">2001</option>
-        <option value="2000">2000</option>
-      </select>
-      <label for="prod-year-to">Год выпуска до</label>
-      <select name="prod-year-to" id="prod-year-to">
-        <option value="Все года выпуска">Все года выпуска</option>
-        <option value="2022">2022</option>
-        <option value="2021">2021</option>
-        <option value="2020">2020</option>
-        <option value="2019">2019</option>
-        <option value="2018">2018</option>
-        <option value="2017">2017</option>
-        <option value="2016">2016</option>
-        <option value="2015">2015</option>
-        <option value="2014">2014</option>
-        <option value="2013">2013</option>
-        <option value="2012">2012</option>
-        <option value="2011">2011</option>
-        <option value="2010">2010</option>
-        <option value="2009">2009</option>
-        <option value="2008">2008</option>
-        <option value="2007">2007</option>
-        <option value="2006">2006</option>
-        <option value="2005">2005</option>
-        <option value="2004">2004</option>
-        <option value="2003">2003</option>
-        <option value="2002">2002</option>
-        <option value="2001">2001</option>
-        <option value="2000">2000</option>
-      </select>
+      <div>
+        <label for="prod-year-from">Год выпуска от</label>
+        <select name="prod-year-from" id="prod-year-from">
+          <option value="Все года выпуска">Все года выпуска</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2010">2010</option>
+          <option value="2009">2009</option>
+          <option value="2008">2008</option>
+          <option value="2007">2007</option>
+          <option value="2006">2006</option>
+          <option value="2005">2005</option>
+          <option value="2004">2004</option>
+          <option value="2003">2003</option>
+          <option value="2002">2002</option>
+          <option value="2001">2001</option>
+          <option value="2000">2000</option>
+        </select>
+      </div>
+      <div>
+        <label for="prod-year-to">Год выпуска до</label>
+        <select name="prod-year-to" id="prod-year-to">
+          <option value="Все года выпуска">Все года выпуска</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2010">2010</option>
+          <option value="2009">2009</option>
+          <option value="2008">2008</option>
+          <option value="2007">2007</option>
+          <option value="2006">2006</option>
+          <option value="2005">2005</option>
+          <option value="2004">2004</option>
+          <option value="2003">2003</option>
+          <option value="2002">2002</option>
+          <option value="2001">2001</option>
+          <option value="2000">2000</option>
+        </select>
+      </div>
     </fieldset>
 
     <fieldset>
@@ -167,18 +186,20 @@
     </fieldset>
 
     <fieldset>
-      <label for="color">Цвет</label>
-      <select name="color" id="color">
-        <option value="Любой цвет">Любой цвет</option>
-        <option value="Красный">Красный</option>
-        <option value="Синий">Синий</option>
-        <option value="Зеленый">Зеленый</option>
-        <option value="Жёлный">Жёлный</option>
-        <option value="Белый">Белый</option>
-        <option value="Черный">Черный</option>
-        <option value="Оранжевый">Оранжевый</option>
-        <option value="Фиолетовый">Фиолетовый</option>
-      </select>
+      <div>
+        <label for="color">Цвет</label>
+        <select name="color" id="color">
+          <option value="Любой цвет">Любой цвет</option>
+          <option value="Красный">Красный</option>
+          <option value="Синий">Синий</option>
+          <option value="Зеленый">Зеленый</option>
+          <option value="Жёлный">Жёлный</option>
+          <option value="Белый">Белый</option>
+          <option value="Черный">Черный</option>
+          <option value="Оранжевый">Оранжевый</option>
+          <option value="Фиолетовый">Фиолетовый</option>
+        </select>
+      </div>
     </fieldset>
 
     <fieldset>
